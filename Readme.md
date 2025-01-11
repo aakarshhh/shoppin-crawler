@@ -1,7 +1,3 @@
-### README for GitHub Repository
-
----
-
 # **E-Commerce Product URL Scraper**
 
 This repository contains a web scraping tool designed to identify and extract product URLs from a list of e-commerce websites. The solution leverages **Streamlit** to provide a user-friendly interface where users can input domains, view results in real-time, and download the discovered product URLs in a structured table format.
@@ -9,7 +5,7 @@ This repository contains a web scraping tool designed to identify and extract pr
 ---
 
 ## **Features**
-- **Domain Validation**: Ensures URLs belong to the specified domains
+- **Domain Validation**: Ensures URLs belong to the specified domains.
 - **Product Page Identification**: Uses pattern matching to identify product-related URLs based on common keywords like `/product/`, `/item/`, `/dp/`, etc.
 - **Interactive Streamlit App**:
   - Upload a list of domains directly via the web interface.
@@ -60,18 +56,19 @@ Once the app is deployed online, users can:
 To run the app locally:
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo-name/ecom-product-scraper.git
-   cd ecom-product-scraper
+   git clone https://github.com/aakarshhh/shoppin-crawler
+   cd shoppin-crawler
    ```
 
-2. **Install Dependencies**:
-   Ensure Python is installed, then install the required libraries:
+2. **Install Python Dependencies**:
+   Install all required Python packages using `requirements.txt`:
    ```bash
    pip install -r requirements.txt
    ```
 
 3. **Run the App**:
    ```bash
+   cd ecom_scrapper
    streamlit run app.py
    ```
 
@@ -82,9 +79,9 @@ To run the app locally:
 
 ---
 
-### **Input File Format**
+### **Input Format**
 - The input file should contain one domain per line.
-- Example (`domains.txt`):
+- Example:
   ```
   amazon.in
   flipkart.com
@@ -122,3 +119,5 @@ The table can be downloaded as a CSV file.
 ### **Future Enhancements**
 - Support for JavaScript-rendered pages using `playwright`.
 - Enhanced error handling and retry mechanisms for failed requests.
+
+---
